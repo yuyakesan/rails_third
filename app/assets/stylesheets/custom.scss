@@ -73,6 +73,15 @@ h2 {
   margin-left: 0;
 }
 
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
 
 p {
   font-size: 1.1em;
@@ -143,4 +152,14 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
