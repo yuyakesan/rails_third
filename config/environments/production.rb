@@ -86,9 +86,10 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
   
+   
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  #host = '<your heroku app>.herokuapp.com'
+  host = 'stark-beyond-04633.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
@@ -98,7 +99,6 @@ Rails.application.configure do
     :domain         => host,
     :authentication => :plain,
   }
-  
   
 
   # Do not dump schema after migrations.
